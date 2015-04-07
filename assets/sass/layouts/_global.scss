@@ -1,0 +1,36 @@
+// ----------------------------------------
+// LAYOUTS: GLOBAL
+// ----------------------------------------
+
+// ========== Wrapper ========== //
+div.wrapper {
+  max-width: $l-wrapper-max-width;
+  margin: $l-wrapper-margin;
+  padding: $l-wrapper-padding;
+  flex: 1;
+}
+
+// ========== Footer ========== //
+// This makes my sticky footer work
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body > footer {
+  padding: scale(3) 0;
+  font-family: $t-headings-font;
+  font-weight: 300;
+  letter-spacing: 0.05rem; // Too small to use scale
+  background: $c-footer-background;
+  color: $c-footer-text;
+  & p {
+    max-width: $l-wrapper-max-width;
+    margin: 0 auto;
+    padding: 0 scale(base);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

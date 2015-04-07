@@ -1,0 +1,13 @@
+<article>
+	<header>
+		<h2><a href="{{ article.slug }}">{{ article.title }}</a></h2>
+		{% assign post = article %}
+		{% include "article-date" %}
+	</header>
+	<section>
+		{{ article.body }}
+	</section>
+	<footer>
+		{% include "article-tags" %}
+	</footer>
+</article>

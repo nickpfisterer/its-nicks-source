@@ -1,0 +1,19 @@
+<nav class="pagination">
+	{% if collection.previous %}
+		{% capture prev %}{{ collection.current_page | minus:1 }}{% endcapture %}
+		{% if prev == "1" %}
+			<a href="/" class="previous"><span class="icon-rewind"></span> Previous</a>
+		{% else %}
+			<a href="/page-{{ prev }}" class="previous"><span class="icon-rewind"></span> Previous</a>
+		{% endif %}
+	{% else %}
+	<span class="no-previous"><span class="icon-rewind"></span> Previous</span>
+	{% endif %}
+	<!-- <span>Showing items {{ collection.current_offset | plus: 1 }}-{% if collection.next %}{{ collection.current_offset | plus: collection.page_size }}{% else %}{{ collection.size }}{% endif %} of {{ collection.size }}</span> -->
+	<span class="icon-ellipsis"></span>
+	{% if collection.next %}
+		<a href="/page-{{ collection.current_page | plus:1 }}" class="next">Next <span class="icon-fast-forward"></span></a>
+	{% else %}
+		<span class="no-next">Next <span class="icon-fast-forward"></span></span>
+	{% endif %}
+</nav>

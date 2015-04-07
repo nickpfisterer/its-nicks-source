@@ -1,0 +1,43 @@
+// ----------------------------------------
+// LAYOUTS: ARTICLES
+// ----------------------------------------
+
+// ========== Article (List) ========== //
+article {
+  margin: scale(6) 0;
+}
+
+article header {
+  h2 {
+    margin-bottom: scale(-4);
+    font-family: $t-headings-font;
+    a {
+      border: 0;
+      &:hover {
+        background: transparent;
+        color: $brand;
+      }
+    }
+  }
+  time {
+    // font-size: $t-size-caption;
+    font-family: $t-headings-font;
+    font-weight: 400;
+    color: $c-article-date;
+  }
+}
+
+// ========== Article (Single) ========== //
+.post article {
+  margin-bottom: 6rem;
+  header {
+    text-align: center;
+    padding-bottom: scale(2);
+    h2 {
+      font-size: $t-size-display;
+    }
+  }
+  > p:first-of-type {
+    margin-top: scale(4);
+  }
+}

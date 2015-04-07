@@ -1,0 +1,12 @@
+{% layout "default" %}
+{% block content %}
+	{% collection "blog" by 1 query 'tags={{ mixture.route.tag }}' order desc %}
+		{% if collection.size == 0 %}
+			{% include "no-articles" %}
+		{% else %}
+			{% assign currentpage = collection.current_page %}
+			{% include "article" with collection.items %}
+			{% include "pagination" %}
+		{% endif %}
+	{% endcollection %}
+{% endblock %}

@@ -1,0 +1,90 @@
+// ----------------------------------------
+// TYPOGRAPHY
+// ----------------------------------------
+
+// ========== Root Styles ========== //
+:root {
+  font: 14px/#{scale(3, unitless)} $t-base-font;
+  @include breakpoint(human) {
+    font-size: 16px;
+  }
+  @include breakpoint(norn) {
+    font-size: 18px;
+  }
+}
+
+body {
+  color: $c-body-text;
+}
+
+// ========== Headings ========== //
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: scale(base) 0;
+  line-height: scale(base, unitless);
+}
+
+h1,
+h2,
+h3 {
+  color: $c-headings-major;
+}
+
+h4,
+h5,
+h6 {
+  color: $c-headings-minor;
+}
+
+h1 { font-size: $t-size-display; }
+h2 { font-size: $t-size-headline; }
+h3 { font-size: $t-size-subhead; }
+h4 { font-size: $t-size-lead; }
+h5 { font-size: $t-size-body; }
+h6 { font-size: $t-size-caption; }
+
+// ========== Paragraphs ========== //
+p {
+  margin: scale(base) 0 scale(2) 0;
+  text-align: justify;
+}
+
+// ========== Lists ========== //
+// Soon...
+
+// ========== Blockquotes ========== //
+blockquote {
+  margin: scale(4);
+  font-style: italic;
+  font-weight: 900;
+  font-size: $t-size-lead;
+  p {
+    margin: 0;
+  }
+}
+
+// ========== Links ========== //
+a {
+  padding: 0.1rem; // Didn't use scale because value is too small
+  background: $c-link-background;
+  color: $c-link-text;
+  border-bottom: 2px solid $c-link-border;
+  text-decoration: none;
+  transition: all 100ms ease-in;
+  &:hover {
+    background: $c-link-background-hover;
+    color: $c-link-text-hover;
+    border-color: $c-link-border-hover;
+  }
+}
+
+// ========== Text Selection ========== //
+::selection {
+  background: $c-selection-background;
+  color: $c-selection-text;
+  text-shadow: none;
+}

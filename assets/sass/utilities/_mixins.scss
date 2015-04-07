@@ -1,0 +1,18 @@
+// ----------------------------------------
+// MIXINS
+// ----------------------------------------
+
+// ========== Breakpoint Generator ========== //
+@mixin breakpoint($breakpoint) {
+
+  // Retreive the value from the key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // If the key exists in the map...
+  @if $value != null {
+    // ...print a media query based on the value
+    @media screen and (min-width: $value) {
+      @content;
+    }
+  }
+}
