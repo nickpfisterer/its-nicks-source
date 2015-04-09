@@ -1,6 +1,6 @@
 {% layout "default" %}
 {% block content %}
-	{% collection "blog" by 1 query 'tags={{ mixture.route.tag }}' order desc %}
+	{% collection "blog" by 10 query 'tags={{ mixture.route.tag }}' order desc %}
 		{% if collection.size == 0 %}
 			{% include "no-articles" %}
 		{% else %}
