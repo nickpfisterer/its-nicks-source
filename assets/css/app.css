@@ -360,10 +360,10 @@ th {
   font: 14px/1.728 "Merriweather", serif; }
   @media screen and (min-width: 38rem) {
     :root {
-      font-size: 16px; } }
+      font-size: 15px; } }
   @media screen and (min-width: 52rem) {
     :root {
-      font-size: 18px; } }
+      font-size: 16px; } }
 
 body {
   color: #555; }
@@ -412,8 +412,9 @@ p {
 blockquote {
   margin: 2.0736rem;
   font-style: italic;
-  font-weight: 900;
-  font-size: 1.2rem; }
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #999; }
   blockquote p {
     margin: 0; }
 
@@ -421,14 +422,14 @@ a {
   padding: 0.1rem;
   background: transparent;
   color: #555;
-  border-bottom: 2px solid #4dd0e1;
+  border-bottom: 2px solid #57b9e2;
   text-decoration: none;
   -webkit-transition: all 100ms ease-in;
   transition: all 100ms ease-in; }
   a:hover {
-    background: #d0f3f7;
-    color: #1d9bab;
-    border-color: #1d9bab; }
+    background: #d9eff9;
+    color: #1f88b4;
+    border-color: #1f88b4; }
 
 ::-moz-selection {
   background: #fff59d;
@@ -446,7 +447,7 @@ img {
 
 hr {
   border: 0;
-  border-top: 2px solid #eee; }
+  border-top: 1px solid #eee; }
 
 nav.global {
   display: -webkit-box;
@@ -471,7 +472,7 @@ nav.global {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
-    color: #4dd0e1; }
+    color: #57b9e2; }
     nav.global a:hover {
       background: transparent;
       color: #555; }
@@ -498,7 +499,7 @@ nav.global {
     border: 0; }
     .pagination a:hover {
       background: transparent;
-      color: #4dd0e1; }
+      color: #57b9e2; }
   .pagination .no-previous,
   .pagination .no-next {
     color: #eee; }
@@ -508,6 +509,7 @@ span.tag a {
   border: 0;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
+  font-size: 0.83333rem;
   letter-spacing: 0.05rem;
   background: #eee;
   color: #999; }
@@ -631,6 +633,11 @@ h2.tag-heading {
 
 article {
   margin: 2.98598rem 0; }
+  article:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee; }
+  article.minimal {
+    margin: 1.728rem 0; }
 
 article header h2 {
   margin-bottom: 0.48225rem;
@@ -639,11 +646,16 @@ article header h2 {
     border: 0; }
     article header h2 a:hover {
       background: transparent;
-      color: #4dd0e1; }
+      color: #57b9e2; }
 article header time {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #999; }
+
+article.minimal header h2 {
+  font-size: 1.44rem; }
+article.minimal header time {
+  font-size: 0.83333rem; }
 
 .post article {
   margin-bottom: 6rem; }

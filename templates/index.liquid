@@ -1,11 +1,16 @@
 {% layout "default" %}
 {% block content %}
-	{% collection "blog" by 10 query 'tags={{ mixture.route.tag }}' order desc %}
+	{% collection "blog" by 5 query 'tags={{ mixture.route.tag }}' order desc %}
 		{% if collection.size == 0 %}
 			{% include "no-articles" %}
 		{% else %}
 			{% assign currentpage = collection.current_page %}
-			{% include "article" with collection.items %}
+			{% for article in collection.items limit:1 %}
+				{% include "article" %}
+			{% endfor %}
+			{% for article in collection.items offset:1 %}
+				{% include "article-min" %}
+			{% endfor %}
 			{% include "pagination" %}
 		{% endif %}
 	{% endcollection %}

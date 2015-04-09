@@ -1,13 +1,10 @@
-<article>
+<article class="minimal">
 	<header>
 		{% assign post = article %}
 		<h2><a href="{{ article.slug }}">{{ article.title }}</a></h2>
 		{% include "article-date" %}
 	</header>
-	<section>
-		{{ article.body }}
-	</section>
 	<footer>
-		{% include "article-tags" %}
+		<!-- Do not show tags -->
 	</footer>
 </article>

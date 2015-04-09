@@ -5,6 +5,13 @@
 // ========== Article (List) ========== //
 article {
   margin: scale(6) 0;
+  &:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $c-divider;
+  }
+  &.minimal {
+    margin: scale(3) 0;
+  }
 }
 
 article header {
@@ -24,6 +31,15 @@ article header {
     font-family: $t-headings-font;
     font-weight: 400;
     color: $c-article-date;
+  }
+}
+
+article.minimal header {
+  h2 {
+    font-size: $t-size-subhead;
+  }
+  time {
+    font-size: $t-size-caption;
   }
 }
 
