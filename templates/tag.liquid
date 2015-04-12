@@ -12,7 +12,9 @@
 			<hr>
 			{% assign currentpage = collection.current_page %}
 			{% include "article" with collection.items %}
-			{% include "pagination" %}
+			{% if collection.size > 10 %}
+				{% include "pagination" %}
+			{% endif %}
 		{% endif %}
 	{% endcollection %}
 {% endblock %}
