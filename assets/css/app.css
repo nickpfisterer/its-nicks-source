@@ -375,6 +375,7 @@ h4,
 h5,
 h6 {
   margin: 1rem 0;
+  font-family: "Oswald", sans-serif;
   line-height: 1.2; }
 
 h1,
@@ -410,11 +411,12 @@ p {
   text-align: justify; }
 
 blockquote {
-  margin: 2.0736rem;
+  margin: 2.0736rem 2.0736rem 2.0736rem 0;
+  padding-left: 2.0736rem;
   font-style: italic;
   font-weight: 300;
-  font-size: 1.2rem;
-  color: #999; }
+  color: #999;
+  border-left: 1px solid #eee; }
   blockquote p {
     margin: 0; }
 
@@ -440,6 +442,11 @@ a {
   background: #fff59d;
   color: #555;
   text-shadow: none; }
+
+code {
+  padding: 0.3349rem;
+  background: #eee;
+  color: #999; }
 
 img {
   max-width: 100%;
@@ -613,14 +620,12 @@ body > footer {
 
 h2.tag-heading {
   padding: 1.44rem 0;
-  font-family: "Oswald", sans-serif;
   font-weight: 300;
   text-align: center; }
 
 .no-articles {
   text-align: center; }
   .no-articles h2 {
-    font-family: "Oswald", sans-serif;
     font-size: 2.48832rem; }
   .no-articles p {
     text-align: center; }
@@ -640,8 +645,7 @@ article {
     margin: 1.728rem 0; }
 
 article header h2 {
-  margin-bottom: 0.48225rem;
-  font-family: "Oswald", sans-serif; }
+  margin-bottom: 0.48225rem; }
   article header h2 a {
     border: 0; }
     article header h2 a:hover {

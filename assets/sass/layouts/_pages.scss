@@ -25,7 +25,6 @@
 // ========== Tag ========== //
 h2.tag-heading {
   padding: scale(2) 0;
-  font-family: $t-headings-font;
   font-weight: 300;
   text-align: center;
 }
@@ -34,7 +33,6 @@ h2.tag-heading {
 .no-articles {
   text-align: center;
   h2 {
-    font-family: $t-headings-font;
     font-size: $t-size-display;
   }
   p {

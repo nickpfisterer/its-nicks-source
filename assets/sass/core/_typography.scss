@@ -25,6 +25,7 @@ h4,
 h5,
 h6 {
   margin: scale(base) 0;
+  font-family: $t-headings-font;
   line-height: scale(1, unitless);
 }
 
@@ -58,11 +59,13 @@ p {
 
 // ========== Blockquotes ========== //
 blockquote {
-  margin: scale(4);
+  margin: scale(4) scale(4) scale(4) 0;
+  padding-left: scale(4);
   font-style: italic;
   font-weight: 300;
-  font-size: $t-size-lead;
+  // font-size: $t-size-lead;
   color: $c-article-quote;
+  border-left: 1px solid $c-divider;
   p {
     margin: 0;
   }
