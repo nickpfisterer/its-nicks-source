@@ -4,13 +4,13 @@
 
 // ========== Article (List) ========== //
 article {
-  margin: scale(6) 0;
-  &:not(:last-child) {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid $c-divider;
+  margin: 6rem 0;
+  &:last-child {
+    // margin-bottom: scale(6);
+    // border-bottom: 2px solid $c-divider;
   }
   &.minimal {
-    margin: scale(3) 0;
+    margin: scale(6) 0;
   }
 }
 
@@ -19,6 +19,7 @@ article header {
     margin-bottom: scale(-4);
     a {
       border: 0;
+      color: $gray-2;
       &:hover {
         background: transparent;
         color: $brand;
@@ -26,11 +27,17 @@ article header {
     }
   }
   time {
-    // font-size: $t-size-caption;
-    font-family: $t-headings-font;
+    font-size: $t-size-caption;
     font-weight: 400;
+    text-transform: uppercase;
+    // letter-spacing: 0.03rem;
     color: $c-article-date;
   }
+}
+
+article hr {
+  // max-width: 20%;
+  margin-top: 6rem;
 }
 
 article.minimal header {
@@ -44,13 +51,10 @@ article.minimal header {
 
 // ========== Article (Single) ========== //
 .post article {
-  margin-bottom: 6rem;
+  margin: 6rem 0;
   header {
     text-align: center;
-    padding-bottom: scale(2);
-    h2 {
-      font-size: $t-size-display;
-    }
+    margin-bottom: 6rem;
   }
   > p:first-of-type {
     margin-top: scale(4);

@@ -6,10 +6,10 @@
 :root {
   font: 14px/#{scale(3, unitless)} $t-base-font;
   @include breakpoint(human) {
-    font-size: 15px;
+    font-size: 16px;
   }
   @include breakpoint(norn) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -51,7 +51,7 @@ h6 { font-size: $t-size-caption; }
 // ========== Paragraphs ========== //
 p {
   margin: scale(base) 0 scale(2) 0;
-  text-align: justify;
+  // text-align: justify;
 }
 
 // ========== Lists ========== //
@@ -73,17 +73,22 @@ blockquote {
 
 // ========== Links ========== //
 a {
-  padding: 0.1rem; // Didn't use scale because value is too small
+  text-decoration: none;
   background: $c-link-background;
   color: $c-link-text;
-  border-bottom: 2px solid $c-link-border;
-  text-decoration: none;
-  transition: all 100ms ease-in;
+  border-bottom: 4px solid $c-link-border;
+  transition: all 120ms ease;
   &:hover {
-    background: $c-link-background-hover;
-    color: $c-link-text-hover;
+    // background: $c-link-background-hover;
+    // color: $c-link-text-hover;
     border-color: $c-link-border-hover;
   }
+}
+
+p a {
+  display: inline-block;
+  padding: 0.4rem 0.1rem 0.1rem; // Didn't use scale because value is too small
+  line-height: 0.8;
 }
 
 // ========== Text Selection ========== //

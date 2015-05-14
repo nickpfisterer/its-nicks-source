@@ -6,22 +6,23 @@
 nav.global {
   display: flex;
   align-items: center;
+  margin-top: scale(1);
   & a.brand {
     flex: 1;
+    color: $gray-2;
     & img {
       max-width: 60px;
       border-radius: 50%;
     }
   }
-  // &:hover a {
-  //   color: $c-nav-text;
-  // }
   & a {
     border: 0;
     padding: scale(-5);
-    font-family: $t-headings-font;
+    // font-family: $t-headings-font;
+    font-weight: 700;
+    font-size: $t-size-caption;
     text-transform: uppercase;
-    letter-spacing: 0.05rem; // Too small to use scale
+    letter-spacing: 0.02rem; // Too small to use scale
     color: $c-nav-text;
     &:hover {
       background: transparent;
@@ -36,12 +37,10 @@ nav.global {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: $t-headings-font;
-  span.icon-ellipsis {
-    font-size: scale(2);
-    color: $gray-4;
-    // flex: 1;
-  }
+  text-transform: uppercase;
+  font-size: $t-size-caption;
+  font-weight: 700;
+  color: $gray-4;
   a {
     border: 0;
     &:hover {
@@ -59,15 +58,15 @@ nav.global {
 span.tag a {
   padding: scale(-5);
   border: 0;
-  font-family: $t-headings-font;
-  font-weight: 300;
+  // font-family: $t-headings-font;
+  font-weight: 700;
   font-size: $t-size-caption;
-  letter-spacing: 0.05rem;
+  // letter-spacing: 0.05rem;
   // text-transform: uppercase;
-  background: $c-tag-background;
+  // background: $c-tag-background;
   color: $c-tag-text;
   &:hover {
-    background: $c-tag-background-hover;
+    // background: $c-tag-background-hover;
     color: $c-tag-text-hover;
   }
 }

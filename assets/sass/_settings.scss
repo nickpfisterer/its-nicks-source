@@ -4,12 +4,13 @@
 
 // ========== Color Palette ========== //
 
-$gray-1:                     #222;
-$gray-2:                     #555;
-$gray-3:                     #999;
-$gray-4:                     #ccc;
+$gray-1:                     #2d3b4c;
+$gray-2:                     #4b6280;
+$gray-3:                     #9bb0cc;
+$gray-4:                     #dce7f5;
 $gray-5:                     #eee;
-$brand:                      #57b9e2;
+$brand:                      #29b6f6;
+$brand-light:                #81d4fa;
 $highlight:                  #fff59d;
 
 // ========== Color Assignment ========== //
@@ -25,34 +26,34 @@ $c-article-headline-hover:   $brand;
 $c-article-date:             $gray-3;
 $c-article-quote:            $gray-3;
 
-$c-tag-background:           $gray-5;
+$c-tag-background:           $gray-4;
 $c-tag-background-hover:     $gray-4;
 $c-tag-text:                 $gray-3;
 $c-tag-text-hover:           $gray-2;
 
-$c-footer-background:        $gray-5;
+$c-footer-background:        $gray-4;
 $c-footer-text:              $gray-3;
 
 $c-link-background:          transparent;
-$c-link-text:                $gray-2;
-$c-link-background-hover:    lighten($brand, 30%);
+$c-link-text:                $gray-1;
+$c-link-background-hover:    $brand-light;
 $c-link-text-hover:          darken($brand, 20%);
-$c-link-border:              $brand;
-$c-link-border-hover:        darken($brand, 20%);
+$c-link-border:              $brand-light;
+$c-link-border-hover:        $brand;
 
 $c-selection-background:     $highlight;
 $c-selection-text:           $gray-2;
 
 $c-nav-text:                 $brand;
 $c-nav-text-hover:           $gray-2;
-$c-nav-text-faded:           $gray-5;
+$c-nav-text-faded:           $gray-4;
 
-$c-divider:                  $gray-5;
+$c-divider:                  $gray-4;
 
 // ========== Typography ========== //
 
-$font-family-1:              'Merriweather', serif;
-$font-family-2:              'Oswald', sans-serif;
+$font-family-1:              'adelle-sans', sans-serif;
+$font-family-2:              'adelle', serif;
 
 $t-base-font:                $font-family-1;
 $t-headings-font:            $font-family-2;

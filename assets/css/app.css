@@ -357,16 +357,16 @@ th {
   padding: 0; }
 
 :root {
-  font: 14px/1.728 "Merriweather", serif; }
+  font: 14px/1.728 "adelle-sans", sans-serif; }
   @media screen and (min-width: 38rem) {
     :root {
-      font-size: 15px; } }
+      font-size: 16px; } }
   @media screen and (min-width: 52rem) {
     :root {
-      font-size: 16px; } }
+      font-size: 18px; } }
 
 body {
-  color: #555; }
+  color: #4b6280; }
 
 h1,
 h2,
@@ -375,18 +375,18 @@ h4,
 h5,
 h6 {
   margin: 1rem 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "adelle", serif;
   line-height: 1.2; }
 
 h1,
 h2,
 h3 {
-  color: #555; }
+  color: #4b6280; }
 
 h4,
 h5,
 h6 {
-  color: #999; }
+  color: #9bb0cc; }
 
 h1 {
   font-size: 2.48832rem; }
@@ -407,46 +407,47 @@ h6 {
   font-size: 0.83333rem; }
 
 p {
-  margin: 1rem 0 1.44rem 0;
-  text-align: justify; }
+  margin: 1rem 0 1.44rem 0; }
 
 blockquote {
   margin: 2.0736rem 2.0736rem 2.0736rem 0;
   padding-left: 2.0736rem;
   font-style: italic;
   font-weight: 300;
-  color: #999;
-  border-left: 1px solid #eee; }
+  color: #9bb0cc;
+  border-left: 1px solid #dce7f5; }
   blockquote p {
     margin: 0; }
 
 a {
-  padding: 0.1rem;
-  background: transparent;
-  color: #555;
-  border-bottom: 2px solid #57b9e2;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-in;
-  transition: all 100ms ease-in; }
+  background: transparent;
+  color: #2d3b4c;
+  border-bottom: 4px solid #81d4fa;
+  -webkit-transition: all 120ms ease;
+  transition: all 120ms ease; }
   a:hover {
-    background: #d9eff9;
-    color: #1f88b4;
-    border-color: #1f88b4; }
+    border-color: #29b6f6; }
+
+p a {
+  display: inline-block;
+  padding: 0.4rem 0.1rem 0.1rem;
+  line-height: 0.8; }
 
 ::-moz-selection {
   background: #fff59d;
-  color: #555;
+  color: #4b6280;
   text-shadow: none; }
 
 ::selection {
   background: #fff59d;
-  color: #555;
+  color: #4b6280;
   text-shadow: none; }
 
 code {
   padding: 0.3349rem;
   background: #eee;
-  color: #999; }
+  color: #9bb0cc; }
 
 img {
   max-width: 100%;
@@ -454,7 +455,7 @@ img {
 
 hr {
   border: 0;
-  border-top: 1px solid #eee; }
+  border-top: 2px solid #dce7f5; }
 
 nav.global {
   display: -webkit-box;
@@ -464,25 +465,28 @@ nav.global {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 1.2rem; }
   nav.global a.brand {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    color: #4b6280; }
     nav.global a.brand img {
       max-width: 60px;
       border-radius: 50%; }
   nav.global a {
     border: 0;
     padding: 0.40188rem;
-    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 0.83333rem;
     text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    color: #57b9e2; }
+    letter-spacing: 0.02rem;
+    color: #29b6f6; }
     nav.global a:hover {
       background: transparent;
-      color: #555; }
+      color: #4b6280; }
 
 .pagination {
   margin: 1rem 0;
@@ -498,31 +502,27 @@ nav.global {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: "Oswald", sans-serif; }
-  .pagination span.icon-ellipsis {
-    font-size: 1.44rem;
-    color: #ccc; }
+  text-transform: uppercase;
+  font-size: 0.83333rem;
+  font-weight: 700;
+  color: #dce7f5; }
   .pagination a {
     border: 0; }
     .pagination a:hover {
       background: transparent;
-      color: #57b9e2; }
+      color: #29b6f6; }
   .pagination .no-previous,
   .pagination .no-next {
-    color: #eee; }
+    color: #dce7f5; }
 
 span.tag a {
   padding: 0.40188rem;
   border: 0;
-  font-family: "Oswald", sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 0.83333rem;
-  letter-spacing: 0.05rem;
-  background: #eee;
-  color: #999; }
+  color: #9bb0cc; }
   span.tag a:hover {
-    background: #ccc;
-    color: #555; }
+    color: #4b6280; }
 
 @font-face {
   font-family: 'nicks-icons';
@@ -582,11 +582,8 @@ body {
 
 body > footer {
   padding: 1.728rem 0;
-  font-family: "Oswald", sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.05rem;
-  background: #eee;
-  color: #999; }
+  background: #dce7f5;
+  color: #9bb0cc; }
   body > footer p {
     max-width: 48rem;
     margin: 0 auto;
@@ -607,6 +604,7 @@ body > footer {
 .four-oh-four {
   text-align: center; }
   .four-oh-four h2 {
+    font-family: "adelle-sans", sans-serif;
     font-size: 2.48832rem;
     font-style: italic; }
   .four-oh-four p {
@@ -614,13 +612,14 @@ body > footer {
   .four-oh-four a {
     border: 0; }
     .four-oh-four a:hover {
-      background: transparent; }
+      background: transparent;
+      color: #29b6f6; }
     .four-oh-four a .icon-help {
       font-size: 1.44rem; }
 
 h2.tag-heading {
-  padding: 1.44rem 0;
-  font-weight: 300;
+  margin: 6rem 0;
+  font-weight: 400;
   text-align: center; }
 
 .no-articles {
@@ -632,29 +631,32 @@ h2.tag-heading {
   .no-articles a {
     border: 0; }
     .no-articles a:hover {
-      background: transparent; }
+      background: transparent;
+      color: #29b6f6; }
     .no-articles a .icon-help {
       font-size: 1.44rem; }
 
 article {
-  margin: 2.98598rem 0; }
-  article:not(:last-child) {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee; }
+  margin: 6rem 0; }
   article.minimal {
-    margin: 1.728rem 0; }
+    margin: 2.98598rem 0; }
 
 article header h2 {
   margin-bottom: 0.48225rem; }
   article header h2 a {
-    border: 0; }
+    border: 0;
+    color: #4b6280; }
     article header h2 a:hover {
       background: transparent;
-      color: #57b9e2; }
+      color: #29b6f6; }
 article header time {
-  font-family: "Oswald", sans-serif;
+  font-size: 0.83333rem;
   font-weight: 400;
-  color: #999; }
+  text-transform: uppercase;
+  color: #9bb0cc; }
+
+article hr {
+  margin-top: 6rem; }
 
 article.minimal header h2 {
   font-size: 1.44rem; }
@@ -662,12 +664,10 @@ article.minimal header time {
   font-size: 0.83333rem; }
 
 .post article {
-  margin-bottom: 6rem; }
+  margin: 6rem 0; }
   .post article header {
     text-align: center;
-    padding-bottom: 1.44rem; }
-    .post article header h2 {
-      font-size: 2.48832rem; }
+    margin-bottom: 6rem; }
   .post article > p:first-of-type {
     margin-top: 2.0736rem; }
 /*# sourceMappingURL=app.css.map */

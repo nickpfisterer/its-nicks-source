@@ -6,6 +6,7 @@
 .four-oh-four {
   text-align: center;
   h2 {
+    font-family: $t-base-font;
     font-size: $t-size-display;
     font-style: italic;
   }
@@ -16,6 +17,7 @@
     border: 0;
     &:hover {
       background: transparent;
+      color: $brand;
     }
     .icon-help {
       font-size: scale(2);
@@ -24,8 +26,8 @@
 }
 // ========== Tag ========== //
 h2.tag-heading {
-  padding: scale(2) 0;
-  font-weight: 300;
+  margin: 6rem 0;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -42,6 +44,7 @@ h2.tag-heading {
     border: 0;
     &:hover {
       background: transparent;
+      color: $brand;
     }
     .icon-help {
       font-size: scale(2);
