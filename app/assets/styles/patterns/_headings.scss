@@ -1,0 +1,29 @@
+// ----------------------------------------
+// Headings
+// ----------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %secondary-font;
+  margin: 0 0 scale(0);
+  line-height: scale(1, unitless);
+}
+
+h1 { font-size: scale(5); }
+h2 { font-size: scale(4); }
+h3 { font-size: scale(3); }
+h4 { font-size: scale(2); }
+h5 { font-size: scale(1); }
+h6 { font-size: scale(0); }
+
+h1, h2, h3 { color: $space-gray-1; }
+h4, h5, h6 { color: $space-gray-2; }
+
+h1.display {
+  font-family: $primary-font-family;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  &.compact {
+    font-size: scale(3);
+  }
+}

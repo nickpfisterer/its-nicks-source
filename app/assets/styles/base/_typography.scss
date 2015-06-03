@@ -1,0 +1,16 @@
+// ----------------------------------------
+// Typography
+// ----------------------------------------
+
+:root {
+  font: $base/#{$root-line-height} $root-font;
+  color: $space-gray-1;
+  @include breakpoint(alpha) {
+    $base: 16px;
+    font-size: $base;
+  }
+}
+
+%secondary-font {
+  font-family: $secondary-font-family;
+}

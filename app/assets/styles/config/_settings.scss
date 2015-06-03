@@ -1,0 +1,21 @@
+// ----------------------------------------
+// Settings
+// ----------------------------------------
+
+// Typography =============================
+
+$primary-font-family:    'Open Sans', sans-serif;
+$secondary-font-family:  'Open Sans Condensed', sans-serif;
+
+$root-font:              $primary-font-family;
+$root-line-height:       scale(3);
+
+// Layout =================================
+
+$breakpoints: (
+  'alpha': 32rem
+);
+
+$content-max-width:      42rem;
+$content-margin:         0 auto;
+$content-padding:        0 scale(0);

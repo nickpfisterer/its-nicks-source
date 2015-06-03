@@ -1,0 +1,55 @@
+// ----------------------------------------
+// Layout
+// ----------------------------------------
+
+body > header, main, body > footer {
+  max-width: $content-max-width; // max width
+  margin: $content-margin; // margin
+  padding: $content-padding; // padding
+}
+
+nav {
+  display: flex;
+}
+
+nav.blog-navigation {
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: scale(12);
+  a:first-child {
+    width: scale(10);
+    padding-left: 0;
+  }
+}
+
+nav.pagination {
+  align-items: center;
+  justify-content: space-between;
+  a {
+    padding: scale(0) 0;
+    flex-grow: 1;
+  }
+  .older {
+    text-align: right;
+  }
+}
+
+body > header,
+body.post-template article header {
+  margin-bottom: scale(12);
+}
+
+body.post-template > header {
+  margin-bottom: 0;
+}
+
+article {
+  margin-bottom: scale(8);
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}

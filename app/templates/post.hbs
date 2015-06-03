@@ -1,0 +1,29 @@
+{{!< default}}
+
+{{#post}}
+
+  {{> header}}
+  <main>
+    <article class="{{post_class}}">
+      <header>
+        <h1>{{title}}</h1>
+        <hr class="thick">
+        <time class="faded" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD YYYY"}}</time>
+      </header>
+      <section class="content">
+        {{content}}
+      </section>
+      <footer>
+        <nav class="pagination">
+          {{#next_post}}
+              <a class="newer" href="{{url}}">&laquo; {{title}}</a>
+          {{/next_post}}
+          {{#prev_post}}
+              <a class="older" href="{{url}}">{{title}} &raquo;</a>
+          {{/prev_post}}
+        </nav>
+      </footer>
+    </article>
+  </main>
+
+{{/post}}

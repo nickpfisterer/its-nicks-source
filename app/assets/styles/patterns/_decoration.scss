@@ -1,0 +1,22 @@
+// ----------------------------------------
+// Decoration
+// ----------------------------------------
+
+hr {
+  border: 0;
+  border-top: 1px solid $space-gray-5;
+  border-bottom: 1px solid $space-gray-5;
+  height: scale(-6);
+}
+
+hr.thick {
+  border: 0;
+  border-top: 4px solid $space-gray-5;
+  max-width: 50%;
+  margin: scale(0) 0;
+}
+
+.stripe {
+  background: $space-blue-bright;
+  height: scale(-4);
+}

@@ -1,0 +1,45 @@
+// ----------------------------------------
+// Text
+// ----------------------------------------
+
+.faded {
+  font-size: scale(0);
+  font-family: $root-font;
+  font-weight: 400;
+  color: $space-gray-3;
+}
+
+time {
+  text-transform: uppercase;
+}
+
+code {
+  padding: 0 scale(-6);
+  border-radius: scale(0);
+  border: 1px solid $space-gray-4;
+  background-color: $space-gray-6;
+  color: $space-gray-2;
+}
+
+pre {
+  padding: scale(-3);
+  border-radius: scale(0);
+  border: 1px solid $space-gray-4;
+  background-color: $space-gray-6;
+  code {
+    border: 0;
+  }
+}
+
+blockquote {
+  margin: scale(0) 0;
+  padding: 1px scale(0);
+  font-style: italic;
+  border-left: 4px solid $space-gray-5;
+}
+
+::selection {
+  background: $space-highlight;
+  color: $space-gray-2;
+  text-shadow: none;
+}

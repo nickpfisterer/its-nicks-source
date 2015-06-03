@@ -1,0 +1,21 @@
+// ----------------------------------------
+// SVG Icons
+// ----------------------------------------
+
+svg.blog-logo {
+  .p { fill: $space-blue-bright; }
+  .n { fill: $space-blue-dark; }
+  path { transition: fill 120ms ease; }
+  &:hover .n { fill: $space-blue-bright; }
+  &:hover .p { fill: $space-blue-dark; }
+}
+
+a {
+  svg.read-more {
+    fill: $space-blue-bright;
+    transition: fill 120ms ease;
+  }
+  &:hover svg.read-more {
+    fill: $space-blue-dark;
+  }
+}

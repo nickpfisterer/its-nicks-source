@@ -1,0 +1,29 @@
+<header>
+
+  {{#is "index"}}
+    {{^is "paged"}}
+      {{navigation}}
+      <h1 class="display">{{@blog.title}}</h1>
+      <h2 class="faded">{{@blog.description}}</h2>
+    {{/is}}
+  {{/is}}
+
+  {{#is "paged"}}
+    {{navigation}}
+    <h1 class="display">{{@blog.title}}</h1>
+    <h2 class="faded">{{@blog.description}}</h2>
+  {{/is}}
+
+  {{#is "post, page"}}
+    {{navigation}}
+  {{/is}}
+
+  {{#is "tag"}}
+    {{navigation}}
+    {{#tag}}
+      <h1 class="display">Thoughts on {{name}}</h1>
+      <hr class="thick">
+    {{/tag}}
+  {{/is}}
+
+</header>

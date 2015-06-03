@@ -1,0 +1,25 @@
+// ----------------------------------------
+// Theme Index
+// ----------------------------------------
+
+// Import utilities
+@import 'utilities/harmon';
+@import 'utilities/breakpoints';
+
+// Import colors
+@import 'config/colors';
+
+// Import settings
+@import 'config/settings';
+
+// Import base styles
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/layout';
+
+// Import component styles
+@import 'patterns/headings';
+@import 'patterns/text';
+@import 'patterns/links';
+@import 'patterns/decoration';
+@import 'patterns/svg';

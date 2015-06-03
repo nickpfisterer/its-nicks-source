@@ -1,0 +1,85 @@
+// ----------------------------------------
+// Links
+// ----------------------------------------
+
+a {
+  text-decoration: none;
+  color: $space-gray-1;
+}
+
+.content a,
+.tags a,
+body > footer a {
+  display: inline-block;
+  line-height: scale(-2, unitless);
+  padding: scale(-2) 0.1rem 0.07rem;
+  transition: all 120ms ease;
+}
+
+.content a {
+  border-bottom: 4px solid $space-blue-bright;
+  &:hover {
+    border-color: $space-blue-dark;
+  }
+}
+
+.tags {
+  font-size: scale(-1);
+  color: $space-gray-3;
+}
+
+.tags a {
+  color: $space-gray-3;
+  border-bottom: 4px solid white;
+  &:hover {
+    color: $space-gray-2;
+    border-color: $space-gray-5;
+  }
+}
+
+.blog-navigation a {
+  @extend %secondary-font;
+  text-transform: uppercase;
+  padding: scale(0);
+  color: $space-blue-bright;
+  transition: all 120ms ease;
+  &:hover {
+    color: $space-blue-dark;
+  }
+}
+
+.pagination a {
+  @extend %secondary-font;
+  text-transform: uppercase;
+  color: $space-blue-bright;
+  transition: all 120ms ease;
+  &:hover {
+    color: $space-blue-dark;
+  }
+}
+
+body > footer {
+  @extend %secondary-font;
+  text-transform: uppercase;
+  color: $space-gray-3;
+  a {
+    color: $space-gray-3;
+    border-bottom: 4px solid white;
+    transition: all 120ms ease;
+    &:hover {
+      color: $space-gray-2;
+      border-color: $space-gray-5;
+    }
+  }
+}
+
+a.nav.compact {
+  border: 0;
+  padding: 0 scale(-3);
+  font-weight: 700;
+  color: $space-blue-bright;
+  transition: all 120ms ease;
+  &:hover {
+    color: $space-blue-dark;
+  }
+}

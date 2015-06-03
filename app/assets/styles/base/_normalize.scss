@@ -1,0 +1,89 @@
+// ----------------------------------------
+// Normalize
+// ----------------------------------------
+
+:root {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+details,
+summary {
+  display: block;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+input {
+  &[type="number"] {
+    width: auto;
+  }
+  &[type="search"] {
+    -webkit-appearance: textfield;
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+pre {
+  overflow: auto;
+}
+
+progress {
+  display: inline-block;
+}
+
+small {
+  font-size: 80%;
+}
+
+template {
+  display: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+[unselectable] {
+  user-select: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}

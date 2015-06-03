@@ -1,0 +1,6 @@
+<nav class="blog-navigation">
+  <a href="{{@blog.url}}">{{> logo}}</a>
+  {{#foreach navigation}}
+    <a href="{{url absolute="true"}}">{{label}}</a>
+  {{/foreach}}
+</nav>

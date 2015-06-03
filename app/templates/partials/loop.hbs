@@ -1,0 +1,18 @@
+{{#foreach posts}}
+  <article class="{{post_class}}">
+    <header>
+      <h2><a href="{{url}}">{{title}}</a></h2>
+      <time class="faded" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD YYYY"}}</time>
+    </header>
+    <section class="content">
+      <p>{{excerpt words="48"}}&hellip;<a class="nav compact" href="{{url}}">{{> readmore}}</a></p>
+    </section>
+    {{^is "tag"}}
+      <footer>
+        <aside class="tags">
+          {{tags separator=", "}}
+        </aside>
+      </footer>
+    {{/is}}
+  </article>
+{{/foreach}}
