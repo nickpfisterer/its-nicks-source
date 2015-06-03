@@ -1,2 +1,2 @@
 # Nick's Source
-The source code for [my personal blog](http://its.nicks.space).
+The source code for Millia, my personal site's Ghost theme.
